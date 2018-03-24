@@ -11,6 +11,8 @@
 
     <p id="demo"></p> 
     <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
 
     <script>
       document.getElementById("demo").innerHTML =
@@ -21,6 +23,14 @@
       var car;
       document.getElementById("demo1").innerHTML =
       car + "<br>" + typeof car;
+      
+      var car1 = "";
+      document.getElementById("demo2").innerHTML = "The value is: " + car + "<br>" + "The type is: " + typeof car1;
+      
+      var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+      person = null;
+      document.getElementById("demo3").innerHTML = typeof person;
+      //The value of person has been set to 'null' but the typeof person is still an 'object'
     </script>
 
   </body>
