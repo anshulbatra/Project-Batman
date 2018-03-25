@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning JavaScript</title>
+  </head>
+  <body>
+
+    <h2>JavaScript typeof</h2>
+    <p>The typeof operator returns object for both objects, arrays, and null.</p>
+    <p>The typeof operator does not return object for functions.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = 
+      typeof {name:'john', age:34} + "<br>" +
+      typeof [1,2,3,4] + "<br>" +
+      typeof null + "<br>" +
+      typeof function myFunc(){};
+      //object
+      //object
+      //object
+      //function
+    </script>
+
+  </body>
+</html>
